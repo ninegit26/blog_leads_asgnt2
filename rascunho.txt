@@ -1,0 +1,22 @@
+
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/Captura de Tela 2019-10-07 às 09.42.26.png" alt="logo" id="logo_img">
+                </a>
+            </div>
+            <i class="fa fa-bars menu-toggle"></i>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <!-- <li><a href="#">Login</a></li> -->
+                    <li>
+                        <a href="#">beabla_admin</a>
+                        <ul>
+                            <li><a href="#">Postar</a></li>
+                            <li><a href="#" class="logout">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
