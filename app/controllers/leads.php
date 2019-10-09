@@ -19,6 +19,7 @@
         
         $lead = create("leads", $_POST);
 
-        dd($_POST);
+        header("Location: http://beabla.com/ebooks/E-BOOK JOGO.pdf"); 
+        exit();
     }
 ?>

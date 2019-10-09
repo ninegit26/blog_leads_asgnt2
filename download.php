@@ -26,7 +26,7 @@
                 </div>
                 <div class="corpo-texto">
                     <div class="auth-content">
-                        <form action="download.php" method="POST">
+                        <form action="download.php" method="POST" target="_blank">
                             <h2 class="form-title">
                                 Informe seu nome e e-mail
                             </h2>
@@ -46,9 +46,9 @@
                 </div>
                 <div class="rodape">
                     <div></div>
-                    <div class="baixar">
+                    <!-- <div class="baixar">
                         <input type="image" src="assets/images/download@2x.png" class="botao-baixar">
-                    </div>
+                    </div> -->
                     <div></div>
                 </div>
             </div>
