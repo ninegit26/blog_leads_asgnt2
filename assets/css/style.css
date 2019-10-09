@@ -211,6 +211,7 @@ li {
 
 .container {
     position: relative;
+    height: 100%;
 }
 
 .container-bg {
@@ -218,7 +219,7 @@ li {
     height: 100%;
     object-fit: contain;
     position: relative;
-    bottom: 250px;
+    bottom: 270px;
 }
 
 .conteudo {
@@ -226,6 +227,77 @@ li {
     width: 100%;
     background-color: white;
     position: absolute;
-    z-index: 2;
+    z-index: 0;
     top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-esquerda {
+    width: 59px;
+    height: 100%;
+    background-color: #16A085;
+    border: 1px solid #707070;
+}
+
+.barra-direita {
+    width: 59px;
+    height: 100%;
+    background-color: #16A085;
+    border: 1px solid #707070;
+}
+
+.texto {
+    width: 100%;
+}
+
+.home {
+    width: 121px;
+    height: 65px;
+    align-self: flex-start;
+    margin: 20px 20px
+}
+
+.componentes-texto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 35px;
+    color: #D46A43;
+    margin: 40px 100px 0px 0px;
+}
+
+.corpo-texto {
+    padding: 50px 100px 50px 100px;
+    display: flex;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px 100px 100px;
+    position: relative;
+    z-index: 2
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.botao-baixar {
+    width: 193px;
+    height: 95px;
+}
+
+.corpo-texto ol li {
+    list-style: decimal;
+}
+
+.auth-context {
+    width: 100%;
 }
