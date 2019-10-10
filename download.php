@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
     <title>bê a BLÁ</title>
@@ -17,11 +20,10 @@
     <div class="container">
         <img src="assets/images/ativo-6@2x.png" alt="background" class="container-bg">
         <div class="conteudo">
-            <!-- <div class="barra-esquerda"></div> -->
             <div class="texto">
                 <div class="componentes-texto">
                     <a href="index.html"><img src="assets/images/home@2x.png" alt="home" class="home"></a>
-                    <div class="titulo">Título Texto</div>
+                    <div class="titulo">Download Ebook</div>
                     <div></div>
                 </div>
                 <div class="corpo-texto">
@@ -30,17 +32,15 @@
                             <h2 class="form-title">
                                 Informe seu nome e e-mail
                             </h2>
-                            <div>
-                                <label>Nome Completo</label>
-                                <input type="text" name="nm_lead" class="text-input">
+                            <div class="form-group">
+                                <label for="inputNome">Nome Completo</label>
+                                <input type="text" class="form-control" id="inputNome" name="nm_lead" required>
                             </div>
-                            <div>
-                                <label>Email</label>
-                                <input type="email" name="ds_email_lead" class="text-input">
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" name="ds_email_lead" aria-describedby="emailHelp" required>
                             </div>
-                            <div>
-                                <button type="submit" name="download-btn" class="btn tbn-big">Submeter</button>
-                            </div>
+                            <button type="submit" class="btn btn-primary">Submeter</button>
                         </form>
                     </div>
                 </div>

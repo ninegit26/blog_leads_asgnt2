@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--OwlCarousel-->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <!--Custom Style-->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/121590743d.js" crossorigin="anonymous"></script>
 
@@ -32,58 +35,46 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <a href="#"><img src="assets/images/ebooks@2x.png" alt="ebooks" class="ebooks"></a>
-        </div>
+        <a href="#"><img src="assets/images/ebooks@2x.png" alt="ebooks" class="ebooks"></a>
     </div>
 </nav>
 <div class="corpo">
     <div class="regua-conteudo">
         <img src="assets/images/Conteudo@2x.png" alt="conteudo" class="balao-conteudo">
     </div>
-    <div class="carrossel">
-        <div class="post-1">
-            <a href="posts/1.html"><img src="assets/images/40396@2x.png" alt="post" class="post">
-                <div class="post-title-1">Guia de alerta</div>
-            </a>
+    <div class="barra-1"></div>
+    <div class="barra-2"></div>
+    <div class="owl-carousel owl-theme owl-loaded owl-drag carousel">
+        <div class="item">
+            <div class="post-1">
+                <a href="posts/1.html"><img src="assets/images/40396@2x.png" alt="post" class="post">
+                    <div class="post-title-1">Guia de alerta</div>
+                </a>
+            </div>
         </div>
-        <div class="post-2">
-            <a href="posts/3.html"><img src="assets/images/16489@2x.png" alt="post" class="post">
-                <div class="post-title-2">Técnicas para Desenvolvimento - Ebook</div>
-            </a>
+        <div class="item">
+            <div class="post-2">
+                <a href="posts/3.html"><img src="assets/images/16489@2x.png" alt="post" class="post">
+                    <div class="post-title-2">Técnicas para Desenvolvimento - Ebook</div>
+                </a>
+            </div>
         </div>
-        <div class="post-3">
-            <a href="#"><img src="assets/images/46934@2x.png" alt="post" class="post">
-                <div class="post-title-3">Em Breve</div>
-            </a>
+        <div class="item">
+            <div class="post-3">
+                <a href="#"><img src="assets/images/46934@2x.png" alt="post" class="post">
+                    <div class="post-title-3">Em Breve</div>
+                </a>
+            </div>
         </div>
-        <div class="barra-1"></div>
-        <div class="barra-2"></div>
-    </div>
-    <div class="paginacao">
-        <div></div>
-        <div class="voltar">
-            <a href="#"><img src="assets/images/voltar@2x.png" alt="voltar" class="botao-voltar"></a>
+        <div class="item">
+            <div class="post-3">
+                <a href="#"><img src="assets/images/46934@2x.png" alt="post" class="post">
+                    <div class="post-title-3">Em Breve</div>
+                </a>
+            </div>
         </div>
-        <div class="marcadores">
-            <div class="elip-1"></div>
-        </div>
-        <div class="marcadores">
-            <div class="elip-2"></div>
-        </div>
-        <div class="marcadores">
-            <div class="elip-3"></div>
-        </div>
-        <div class="ir">
-            <a href="#"><img src="assets/images/ir@2x.png" alt="ir" class="botao-ir"></a>
-        </div>
-        <div></div>
     </div>
 </div>
-
-
-
-
 
 
 <!-- <body>
@@ -135,10 +126,57 @@
     </footer> -->
 
 <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<!-- jQuery and owlcarousel-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $(".carousel").owlCarousel({
+            responsiveClass: true,
+            items: 1,
+            nav: true,
+            navText: ["<img src=\"assets/images/voltar@2x.png\" alt=\"voltar\" class=\"botao-voltar\">", "<img src=\"assets/images/ir@2x.png\" alt=\"ir\" class=\"botao-ir\">"],
+            dots: true,
+            loop: true,
+            lazyLoad: false,
+            callbacks: true,
+            dotClass: "elip",
+            onChanged: showCarousel,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                460: {
+                    items: 1,
+                    nav: true
+                },
+                668: {
+                    items: 2,
+                    nav: true
+                },
+                920: {
+                    items: 3,
+                    nav: true
+                },
+                1200: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+
+        $(".carousel").show();
+
+        function showCarousel(event) {
+            $(".owl-carousel").show();
+        }
+    });
+</script>
 </body>
 
 </html>

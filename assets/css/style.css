@@ -1,3 +1,22 @@
+body {
+    margin: 0;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+a {
+    color: black;
+}
+
+li {
+    list-style: none
+}
+form{
+    margin: 0 20%;
+}
+
 #logo {
     width: 25%;
 }
@@ -14,71 +33,64 @@
     margin-right: 10px;
 }
 
-a {
-    color: black;
-}
-
-footer {
-    margin-top: 100px;
-}
-
 .nav_logo {
     display: block;
 }
 
 .nav_container {
     display: flex;
-    justify-content: space-between;
-    height: 13em;
+    justify-content: space-around;
+    margin: 0 20%;
+    line-height: 10;
 }
 
 .beaba-blog {
     width: 10em;
 }
 
-li {
-    list-style: none
-}
-
 .menu li {
-    margin-right: 2em;
+    width: 33%;
+    text-align: center;
+    /* height: 30px; */
 }
 
 .menu {
     display: flex;
-    align-self: flex-end;
+    padding: 0;
+    margin: 0 8%;
 }
 
 .midias-sociais {
-    width: 10em;
+    width: 100%;
 }
 
 .sobre {
-    width: 3.8em;
+    width: 4em;
 }
 
 .news-letter {
-    width: 8.5em;
+    width: 10em;
 }
 
 .menu-div {
-    align-self: flex-end;
+    align-self: center;
 }
 
 .balao-conteudo {
-    width: 10em;
+    width: 12em;
+    margin: 15px 0;
 }
 
 .regua-conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2em;
+    margin: 1em 0;
 }
 
 .post {
     width: 344px;
-    height: 229, 5px;
+    height: 229px;
     position: relative;
 }
 
@@ -86,42 +98,42 @@ li {
     position: absolute;
     z-index: 2;
     top: 150px;
-    width: 344px;
+    width: 100%;
     height: 44px;
     background-color: #D46A43;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .post-title-2 {
     position: absolute;
     z-index: 2;
     top: 150px;
-    width: 344px;
+    width: 100%;
     height: 44px;
     background-color: #D46A43;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .post-title-3 {
     position: absolute;
     z-index: 2;
     top: 150px;
-    width: 344px;
+    width: 100%;
     height: 44px;
     background-color: #D46A43;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .carrossel {
@@ -155,7 +167,7 @@ li {
     background-color: #D46A43;
     position: absolute;
     z-index: -1;
-    top: 30px;
+    top: 310px;
     opacity: 0.5;
 }
 
@@ -165,36 +177,24 @@ li {
     background-color: #16A085;
     position: absolute;
     z-index: -1;
-    bottom: 30px;
+    top: 397px;
     opacity: 0.5;
 }
 
-.elip-1 {
+.elip {
     width: 18px;
     height: 18px;
     border: 1px solid black;
     border-radius: 50%;
+}
+
+.elip.active {
     background-color: gray;
     opacity: 0.5;
 }
 
-.elip-2 {
-    width: 18px;
-    height: 18px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-.elip-3 {
-    width: 18px;
-    height: 18px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
 .ebooks {
-    width: 138px;
-    height: 82px;
+    width: 130px;
 }
 
 .post-1 {
@@ -212,6 +212,10 @@ li {
 .container {
     position: relative;
     height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: none;
 }
 
 .container-bg {
@@ -285,10 +289,6 @@ li {
     z-index: 2
 }
 
-body {
-    margin: 0;
-}
-
 .botao-baixar {
     width: 193px;
     height: 95px;
@@ -302,20 +302,127 @@ body {
     width: 100%;
 }
 
+.carousel .item {
+    margin: 0 45px;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.owl-dots button {
+    z-index: 999;
+    margin: 0 1%;
+}
+
+.owl-nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 25%;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 1050px) {
-    .carrossel {
+    .barra-1 {
+        top: 410px;
+    }
+
+    .barra-2 {
+        top: 497px;
+    }
+
+    .carousel .item {
+        margin: 0 45px;
+    }
+
+    .post-title-2 {
+        font-size: 14px;
+    }
+
+    .midias-sociais {
+        width: 11em;
+    }
+
+
+    .nav_container {
+        margin: 0;
+    }
+
+    .menu {
         flex-direction: column;
+        margin: 0;
+    }
+
+    .menu-div {
+        position: absolute;
+        width: 50%;
+        margin-top: 100px;
+        height: 147px;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        height: 30px;
+    }
+
+    .corpo {
+        margin-top: 110px;
     }
 }
 
 @media only screen and (max-width: 750px) {
-    .nav_container {
-        flex-direction: column;
+    .barra-1 {
+        top: 410px;
     }
+
+    .barra-2 {
+        top: 497px;
+    }
+
+    .carousel .item {
+        margin: 0 45px;
+    }
+
+    .post-title-2 {
+        font-size: 14px;
+    }
+
+    .owl-nav {
+        padding: 0;
+    }
+
+    .owl-dots button {
+        margin: 0 1%;
+    }
+
+    .nav_container {
+        margin: 0;
+    }
+
     .menu {
         flex-direction: column;
+        margin: 0;
     }
-    .regua-conteudo {
-        flex-direction: column;
+
+    .menu-div {
+        position: absolute;
+        width: 50%;
+        margin-top: 100px;
+        height: 147px;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+        height: 30px;
+    }
+
+    .corpo {
+        margin-top: 110px;
     }
 }
