@@ -13,7 +13,8 @@ a {
 li {
     list-style: none
 }
-form{
+
+form {
     margin: 0 20%;
 }
 
@@ -302,6 +303,31 @@ form{
     width: 100%;
 }
 
+.sobrenos {
+    height: 60%;
+    width: 60%;
+}
+
+.recado-be {
+    height: 70%;
+    width: 70%;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.somente-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .carousel .item {
     margin: 0 45px;
 }
@@ -330,99 +356,124 @@ form{
     .barra-1 {
         top: 410px;
     }
-
     .barra-2 {
         top: 497px;
     }
-
     .carousel .item {
         margin: 0 45px;
     }
-
     .post-title-2 {
         font-size: 14px;
     }
-
     .midias-sociais {
         width: 11em;
     }
-
-
     .nav_container {
         margin: 0;
     }
-
     .menu {
         flex-direction: column;
         margin: 0;
     }
-
     .menu-div {
         position: absolute;
         width: 50%;
         margin-top: 100px;
         height: 147px;
     }
-
     .menu li {
         width: 100%;
         text-align: center;
         height: 30px;
     }
-
     .corpo {
         margin-top: 110px;
     }
+    .sobrenos {
+        height: 100%;
+        width: 100%;
+    }
+    .recado-be {
+        height: 80%;
+        width: 80%;
+    }
+    .container-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        ;
+    }
 }
 
+
+}
 @media only screen and (max-width: 750px) {
     .barra-1 {
         top: 410px;
     }
-
+    
     .barra-2 {
         top: 497px;
     }
-
+    
     .carousel .item {
         margin: 0 45px;
     }
-
+    
     .post-title-2 {
         font-size: 14px;
     }
-
+    
     .owl-nav {
         padding: 0;
     }
-
+    
     .owl-dots button {
         margin: 0 1%;
     }
-
+    
     .nav_container {
         margin: 0;
     }
-
+    
     .menu {
         flex-direction: column;
         margin: 0;
     }
-
+    
     .menu-div {
         position: absolute;
         width: 50%;
         margin-top: 100px;
         height: 147px;
     }
-
+    
     .menu li {
         width: 100%;
         text-align: center;
         height: 30px;
     }
-
+    
     .corpo {
         margin-top: 110px;
+    }
+    
+    .sobrenos {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .recado-be {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container-img {
+        position: absolute;
+        top: 0px;
+        left: 50px;
     }
 }

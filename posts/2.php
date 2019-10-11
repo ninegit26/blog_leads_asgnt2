@@ -7,6 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149586594-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149586594-1');
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
 
     <title>bê a BLÁ</title>
 </head>
@@ -18,7 +33,7 @@
             <!-- <div class="barra-esquerda"></div> -->
             <div class="texto">
                 <div class="componentes-texto">
-                    <a href="../index.html"><img src="../assets/images/home@2x.png" alt="home" class="home"></a>
+                    <a href="../index-2.html"><img src="../assets/images/home@2x.png" alt="home" class="home"></a>
                     <div class="titulo">Título Texto</div>
                     <div></div>
                 </div>

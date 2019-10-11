@@ -22,7 +22,7 @@
         <div class="conteudo">
             <div class="texto">
                 <div class="componentes-texto">
-                    <a href="index.html"><img src="assets/images/home@2x.png" alt="home" class="home"></a>
+                    <a href="index-2.html"><img src="assets/images/home@2x.png" alt="home" class="home"></a>
                     <div class="titulo">Download Ebook</div>
                     <div></div>
                 </div>
@@ -41,7 +41,7 @@
                                 <input type="email" class="form-control" id="inputEmail" name="ds_email_lead" aria-describedby="emailHelp" required>
                             </div>
                             
-                            <button type="submit" class="btn btn-primary">Submeter</button>
+                            <button type="submit" name="download-btn" class="btn btn-primary">Submeter</button>
                         </form>
                     </div>
                 </div>
