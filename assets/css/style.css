@@ -95,7 +95,7 @@ form {
     position: relative;
 }
 
-.post-title-1 {
+.post-title {
     position: absolute;
     z-index: 2;
     top: 150px;
@@ -121,20 +121,6 @@ form {
     align-items: center;
     color: white;
     font-size: 17px;
-}
-
-.post-title-3 {
-    position: absolute;
-    z-index: 2;
-    top: 150px;
-    width: 100%;
-    height: 44px;
-    background-color: #D46A43;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 26px;
 }
 
 .carrossel {
@@ -198,15 +184,7 @@ form {
     width: 130px;
 }
 
-.post-1 {
-    position: relative;
-}
-
-.post-2 {
-    position: relative;
-}
-
-.post-3 {
+.post-n {
     position: relative;
 }
 
@@ -315,11 +293,16 @@ form {
 
 .container-img {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 50px;
     left: 200px;
+}
+
+.container-img a {
+    font-size: 2em;
 }
 
 .somente-imagem {
